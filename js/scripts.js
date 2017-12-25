@@ -13,14 +13,14 @@ $(function() {
       method: 'GET',
       success: showCountriesList
     });  
-    
-    function showCountriesList(resp) {
+  }
+  
+   function showCountriesList(resp) {
       countriesList.empty();
        resp.forEach(function(item) {
          $('<li>').text(item.name).appendTo(countriesList);      
        });
     }
-  }
   
   
 });
