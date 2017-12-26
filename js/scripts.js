@@ -13,7 +13,7 @@ $(function() {
     });  
   }
   
-  searchCountries();
+  
   
   $('search').click(searchCountries);
   
@@ -23,6 +23,9 @@ $(function() {
          $('<li>').text(item.name).appendTo(countriesList);      
        });
     }
+  
+  searchCountries();
+  showCountriesList();
   
  
   
