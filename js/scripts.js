@@ -23,7 +23,7 @@ $(function() {
   
   $('search').click(searchCountries);
   
- 
+ searchCountries();
   
    
   
