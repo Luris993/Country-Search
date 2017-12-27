@@ -1,10 +1,9 @@
 $(function() {
   
-  var url = 'https://restcountries.eu/rest/v1/name/';
+  var url = 'https://restcountries.eu/rest/v1/name/',
+      countriesList = $('#countries');
   
-  var countriesList = $('#countries');
-  
-  $('search').click(searchCountries);
+  $('#search').click(searchCountries);
   
    function searchCountries() {
     var countryName = $('#country-name').val();
@@ -22,5 +21,4 @@ $(function() {
          $('<li>').text(item.name).appendTo(countriesList);      
        });
     }
-  
 });
